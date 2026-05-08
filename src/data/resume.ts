@@ -204,12 +204,53 @@ export const RESUME = {
   // === Certifications ===
   certifications: [{ name: "IELTS Academic", score: "6.5", date: "2024" }],
 
+  // === Event photo galleries — visual proof for the Awards section ===
+  events: [
+    {
+      key: "it-consultant",
+      title: "IT Consultant Hackathon",
+      subtitle: "Netcompany × Codemely · Runner-up · Oct 2025",
+      accent: "amber",
+      photos: [
+        "/ITconsultant1.jpg",
+        "/ITconsultant2.jpg",
+        "/ITconsultant3.jpg",
+        "/ITconsultant4.jpg",
+        "/ITconsultant5.jpg",
+        "/ITconsultant6.jpg",
+        "/ITconsultant7.jpg",
+      ],
+    },
+    {
+      key: "debate-vn",
+      title: "UEH Debate · Vietnamese Category",
+      subtitle: "Runner-up · Aug 2024",
+      accent: "violet",
+      photos: [
+        "/DebateVietnamese1.jpg",
+        "/DebateVietnamese2.jpg",
+        "/DebateVietnamese3.jpg",
+        "/DebateVietnamese4.jpg",
+        "/DebateVietnamese5.jpg",
+        "/DebateVietnamese6.jpg",
+      ],
+    },
+    {
+      key: "debate-en",
+      title: "UEH Debate · English Category",
+      subtitle: "Third Prize · Oct 2025",
+      accent: "fuchsia",
+      photos: ["/DebateEnglish.jpg", "/DebateEnglish2.jpg"],
+    },
+  ],
+
   // === Nav links ===
   nav: [
     { label: "About", href: "#about" },
     { label: "Skills", href: "#skills" },
     { label: "Education", href: "#experience" },
     { label: "Projects", href: "#projects" },
+    { label: "Highlights", href: "#moments" },
     { label: "Contact", href: "#contact" },
   ],
 } as const;
