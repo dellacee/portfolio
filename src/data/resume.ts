@@ -30,7 +30,8 @@ export const RESUME = {
   },
 
   // === Hero CTAs ===
-  hasCV: false, // flip to true after dropping cv.pdf into /public
+  hasCV: true,
+  cvUrl: "/CV_LyMinhThu.pdf",
 
   // === About highlights (small chips below hero CTAs) ===
   highlights: [

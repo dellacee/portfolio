@@ -88,7 +88,7 @@ export function Hero() {
           </Button>
           {RESUME.hasCV ? (
             <Button asChild variant="ghost" size="lg">
-              <a href="/cv.pdf" download>
+              <a href={RESUME.cvUrl} download>
                 <Download className="size-4" /> Resume
               </a>
             </Button>
