@@ -1,17 +1,8 @@
-import { Navbar } from "@/components/sections/navbar";
 import { Hero } from "@/components/sections/hero";
-import { About } from "@/components/sections/about";
-import { Skills } from "@/components/sections/skills";
-import { Experience } from "@/components/sections/experience";
-import { Projects } from "@/components/sections/projects";
-import { Awards } from "@/components/sections/awards";
-import { Resume } from "@/components/sections/resume";
-import { Contact } from "@/components/sections/contact";
-import { Footer } from "@/components/sections/footer";
 import { RESUME } from "@/data/resume";
 
 export default function HomePage() {
-  // JSON-LD structured data — improves SERP appearance + LinkedIn / Slack link previews
+  // JSON-LD structured data — improves SERP appearance + rich link previews
   const personLd = {
     "@context": "https://schema.org",
     "@type": "Person",
@@ -33,18 +24,7 @@ export default function HomePage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(personLd) }}
       />
-      <Navbar />
-      <main className="flex-1">
-        <Hero />
-        <About />
-        <Skills />
-        <Experience />
-        <Projects />
-        <Awards />
-        <Resume />
-        <Contact />
-      </main>
-      <Footer />
+      <Hero />
     </>
   );
 }

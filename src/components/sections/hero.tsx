@@ -73,22 +73,22 @@ export function Hero() {
           className="mt-8 flex flex-wrap items-center justify-center gap-3"
         >
           <Button asChild variant="gradient" size="lg">
-            <Link href="#contact">
+            <Link href="/contact">
               Get in touch <ArrowRight className="size-4" />
             </Link>
           </Button>
           <Button asChild variant="outline" size="lg">
-            <Link
+            <a
               href={RESUME.contact.github}
               target="_blank"
               rel="noopener noreferrer"
             >
               <Github className="size-4" /> GitHub
-            </Link>
+            </a>
           </Button>
           {RESUME.hasCV ? (
             <Button asChild variant="ghost" size="lg">
-              <Link href="#resume">
+              <Link href="/resume">
                 <Download className="size-4" /> Resume
               </Link>
             </Button>

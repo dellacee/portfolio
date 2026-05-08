@@ -243,14 +243,14 @@ export const RESUME = {
   // === Certifications ===
   certifications: [{ name: "IELTS Academic", score: "6.5", date: "2024" }],
 
-  // === Nav links ===
+  // === Nav links — routes per section, original 6 labels preserved ===
   nav: [
-    { label: "About", href: "#about" },
-    { label: "Skills", href: "#skills" },
-    { label: "Projects", href: "#projects" },
-    { label: "Awards", href: "#awards" },
-    { label: "Resume", href: "#resume" },
-    { label: "Contact", href: "#contact" },
+    { label: "About", href: "/about" },
+    { label: "Skills", href: "/skills" },
+    { label: "Projects", href: "/projects" },
+    { label: "Awards", href: "/awards" },
+    { label: "Resume", href: "/resume" },
+    { label: "Contact", href: "/contact" },
   ],
 } as const;
 
