@@ -19,16 +19,13 @@ export const RESUME = {
   bio: "Software Engineering student at UEH (GPA 3.72/4.0), shipping production-grade web projects across the .NET and Node ecosystems. I lean into AI-augmented workflows — RAG, vector DBs, agentic tooling — to ship faster without cutting corners.",
   location: "Ho Chi Minh City, Vietnam",
   url: "https://lyminhthudev.id.vn",
-  // ⚠️ Placeholder gradient SVG. To use your real photo:
-  //   1. Save your photo to /public/avatar.jpg (square, ≥500x500)
-  //   2. Change this value to "/avatar.jpg"
-  avatarUrl: "/avatar.svg",
+  avatarUrl: "/avatar.jpg",
 
   // === Contact ===
   contact: {
     email: "lmthu2435@gmail.com",
     github: "https://github.com/dellacee",
-    linkedin: "", // TODO: add LinkedIn URL when available — empty hides the button
+    linkedin: "https://www.linkedin.com/in/minh-th%C6%B0-l%C3%BD-01bb28263/",
     phone: "0947468774", // private — kept off the public site
   },
 
