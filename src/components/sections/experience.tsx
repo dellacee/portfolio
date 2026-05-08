@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { GraduationCap } from "lucide-react";
 import { Card } from "@/components/ui/card";
@@ -22,9 +23,22 @@ export function Experience() {
             >
               <Card className="p-6">
                 <div className="flex items-start gap-4">
-                  <div className="grid place-items-center size-12 rounded-xl bg-violet-100 dark:bg-violet-950/50 text-violet-600 dark:text-violet-400 shrink-0">
-                    <GraduationCap className="size-6" />
-                  </div>
+                  {edu.logo ? (
+                    <div className="grid place-items-center size-14 rounded-xl bg-white ring-1 ring-zinc-200 dark:ring-zinc-700 shrink-0 p-2 shadow-sm">
+                      <Image
+                        src={edu.logo}
+                        alt={`${edu.shortName} logo`}
+                        width={120}
+                        height={120}
+                        className="size-full object-contain"
+                      />
+                    </div>
+                  ) : (
+                    <div className="grid place-items-center size-14 rounded-xl bg-violet-100 dark:bg-violet-950/50 text-violet-600 dark:text-violet-400 shrink-0">
+                      <GraduationCap className="size-6" />
+                    </div>
+                  )}
+
                   <div className="flex-1 min-w-0">
                     <div className="flex flex-wrap items-baseline justify-between gap-2">
                       <h3 className="font-semibold text-lg leading-tight">

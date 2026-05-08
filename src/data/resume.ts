@@ -97,6 +97,7 @@ export const RESUME = {
     {
       school: "University of Economics Ho Chi Minh City (UEH)",
       shortName: "UEH",
+      logo: "/Logo_UEH_xanh.png",
       major: "Software Engineering",
       gpa: "3.72 / 4.0",
       duration: "Sep 2023 — 2027 (Expected)",
