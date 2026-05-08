@@ -25,7 +25,7 @@ export function Hero() {
           initial={{ opacity: 0, scale: 0.85 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
-          className="mx-auto mb-6 size-28 md:size-32 overflow-hidden rounded-full border-2 border-violet-500/40 shadow-xl shadow-violet-500/20 ring-4 ring-white dark:ring-zinc-950"
+          className="mx-auto mb-6 size-36 md:size-44 overflow-hidden rounded-full border-2 border-violet-500/40 shadow-xl shadow-violet-500/20 ring-4 ring-white dark:ring-zinc-950"
         >
           <Image
             src={RESUME.avatarUrl}
