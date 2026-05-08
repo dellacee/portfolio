@@ -1,4 +1,7 @@
 import { Hero } from "@/components/sections/hero";
+import { About } from "@/components/sections/about";
+import { Skills } from "@/components/sections/skills";
+import { Experience } from "@/components/sections/experience";
 import { RESUME } from "@/data/resume";
 
 export default function HomePage() {
@@ -25,6 +28,9 @@ export default function HomePage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(personLd) }}
       />
       <Hero />
+      <About />
+      <Skills />
+      <Experience />
     </>
   );
 }
