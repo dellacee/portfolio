@@ -24,7 +24,7 @@ export function Resume() {
           transition={{ duration: 0.5 }}
           className="mt-10"
         >
-          <Card className="overflow-hidden p-2 md:p-3 shadow-2xl shadow-violet-500/10 ring-1 ring-zinc-200 dark:ring-zinc-800">
+          <Card className="mx-auto max-w-2xl overflow-hidden p-2 md:p-3 shadow-2xl shadow-violet-500/10 ring-1 ring-zinc-200 dark:ring-zinc-800">
             <div className="rounded-lg overflow-hidden bg-zinc-100 dark:bg-zinc-900">
               <iframe
                 src={`${RESUME.cvUrl}#view=FitH&toolbar=0&navpanes=0`}
