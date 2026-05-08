@@ -168,50 +168,16 @@ export const RESUME = {
     },
   ],
 
-  // === Awards ===
+  // === Awards — each item can carry a photo gallery (expandable in UI) ===
+  // medal: gold | silver | bronze | scholarship — drives icon + color theming
   awards: [
     {
       title: "Runner-up · IT Consultant Hackathon",
       organization: "Netcompany × Codemely",
       date: "Oct 2025",
-    },
-    {
-      title: "Third Prize · UEH Debate (English Category)",
-      organization: "Business IT Department, UEH",
-      date: "Oct 2025",
-    },
-    {
-      title: "Academic Encouragement Scholarship · 3rd Semester",
-      organization: "UEH",
-      date: "Jul 2025",
-    },
-    {
-      title: "Runner-up · UEH Debate (Vietnamese Category)",
-      organization: "Business IT Department, UEH",
-      date: "Aug 2024",
-    },
-    {
-      title: "Academic Encouragement Scholarship · 2nd Semester",
-      organization: "UEH",
-      date: "Jan 2024",
-    },
-    {
-      title: "Entry Academic Encouragement Scholarship",
-      organization: "UEH",
-      date: "Oct 2023",
-    },
-  ],
-
-  // === Certifications ===
-  certifications: [{ name: "IELTS Academic", score: "6.5", date: "2024" }],
-
-  // === Event photo galleries — visual proof for the Awards section ===
-  events: [
-    {
-      key: "it-consultant",
-      title: "IT Consultant Hackathon",
-      subtitle: "Netcompany × Codemely · Runner-up · Oct 2025",
-      accent: "amber",
+      medal: "silver",
+      description:
+        "IT consulting hackathon hosted by Netcompany Vietnam in collaboration with Codemely. Tackled a real-world consulting problem under time pressure, presented to a panel of industry judges.",
       photos: [
         "/ITconsultant1.jpg",
         "/ITconsultant2.jpg",
@@ -223,10 +189,21 @@ export const RESUME = {
       ],
     },
     {
-      key: "debate-vn",
-      title: "UEH Debate · Vietnamese Category",
-      subtitle: "Runner-up · Aug 2024",
-      accent: "violet",
+      title: "Third Prize · UEH Debate (English Category)",
+      organization: "Business IT Department, UEH",
+      date: "Oct 2025",
+      medal: "bronze",
+      description:
+        "Inter-departmental English debate competition at UEH. Argued on contemporary issues against teams from across the university.",
+      photos: ["/DebateEnglish.jpg", "/DebateEnglish2.jpg"],
+    },
+    {
+      title: "Runner-up · UEH Debate (Vietnamese Category)",
+      organization: "Business IT Department, UEH",
+      date: "Aug 2024",
+      medal: "silver",
+      description:
+        "Vietnamese-language debate competition at UEH. Reached the final round and finished as Runner-up.",
       photos: [
         "/DebateVietnamese1.jpg",
         "/DebateVietnamese2.jpg",
@@ -237,21 +214,41 @@ export const RESUME = {
       ],
     },
     {
-      key: "debate-en",
-      title: "UEH Debate · English Category",
-      subtitle: "Third Prize · Oct 2025",
-      accent: "fuchsia",
-      photos: ["/DebateEnglish.jpg", "/DebateEnglish2.jpg"],
+      title: "Academic Encouragement Scholarship · 3rd Semester",
+      organization: "UEH",
+      date: "Jul 2025",
+      medal: "scholarship",
+      description: "",
+      photos: [],
+    },
+    {
+      title: "Academic Encouragement Scholarship · 2nd Semester",
+      organization: "UEH",
+      date: "Jan 2024",
+      medal: "scholarship",
+      description: "",
+      photos: [],
+    },
+    {
+      title: "Entry Academic Encouragement Scholarship",
+      organization: "UEH",
+      date: "Oct 2023",
+      medal: "scholarship",
+      description: "",
+      photos: [],
     },
   ],
+
+  // === Certifications ===
+  certifications: [{ name: "IELTS Academic", score: "6.5", date: "2024" }],
 
   // === Nav links ===
   nav: [
     { label: "About", href: "#about" },
     { label: "Skills", href: "#skills" },
-    { label: "Education", href: "#experience" },
     { label: "Projects", href: "#projects" },
-    { label: "Highlights", href: "#moments" },
+    { label: "Awards", href: "#awards" },
+    { label: "Resume", href: "#resume" },
     { label: "Contact", href: "#contact" },
   ],
 } as const;
